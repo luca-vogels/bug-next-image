@@ -1,4 +1,4 @@
-# Bugreport next/image
+# Bug Report next/image
 
 ## Describe the bug
 When using next/image with a custom server, 
