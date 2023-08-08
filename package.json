@@ -1,0 +1,24 @@
+{
+  "name": "bug-next-image",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx tsc && node ./bin/server.js",
+    "build": "rm -rf .next && npx tsc && next lint && next build",
+    "start": "node ./bin/server.js --production",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "next": "^13.4.14-canary.0",
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "typescript": "5.1.3"
+  }
+}
