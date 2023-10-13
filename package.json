@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "npx tsc && node ./bin/server.js",
     "build": "rm -rf .next && npx tsc && next lint && next build",
-    "start": "node ./bin/server.js --production",
+    "start": "NODE_ENV=production node ./bin/server.js",
     "lint": "next lint"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "next": "^13.4.14-canary.0",
+    "next": "^13.5.4",
     "react": "18.2.0"
   },
   "devDependencies": {
