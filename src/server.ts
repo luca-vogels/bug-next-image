@@ -1,13 +1,13 @@
 import express, { Request, Response } from "express";
 import next from "next";
 
-const dev = true;
+const dev = process.env.NODE_ENV !== 'production';
 const HTTP_BIND = "0.0.0.0";
 const HTTP_PORT = 80;
 
 
 const app = express();
-const nextApp = next({ dev });
+const nextApp = next({ dev, hostname: HTTP_BIND, port: HTTP_PORT });
 const nextHandler = nextApp.getRequestHandler();
 
 nextApp.prepare().then(async () => {
